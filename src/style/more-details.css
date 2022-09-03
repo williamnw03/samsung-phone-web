@@ -1,0 +1,247 @@
+:root {
+    --new-black: #222831;
+    --dark-gray: #393E46;
+    --teal: #00ADB5;
+    --light-gray: #EEEEEE;
+}
+
+div.wrapper-details-table {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+div.wrapper-details-table main.details-table{
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--teal);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+div.wrapper-details-table main.details-table div.image-product-details-table{
+    line-height: 0;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+div.wrapper-details-table main.details-table div.image-product-details-table img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 100%;
+}
+
+@keyframes kelap-kelip-loading-gambar {
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes kelap-kelip-loading-h1 {
+    to {
+        opacity: 1;
+    }
+}
+
+div.loading-image-MoreDetails {
+    animation-name: kelap-kelip-loading-gambar;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    opacity: 0.2;
+
+    background-color: var(--dark-gray);
+    width: 100%;
+    padding-top: 150%;
+    border-radius: 10px;
+}
+
+div.wrapper-details-table main.details-table > h1{
+
+    text-align: center;
+    color: var(--light-gray);
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+div.wrapper-details-table main.details-table > h1.loading-MoreDetails{
+    animation-name: kelap-kelip-loading-h1;
+    animation-duration: 0.4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    opacity: 0.5;
+}
+
+div.wrapper-details-table main.details-table div.all-details-table {
+    margin-top: 40px;
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table:not(div.each-details-table:nth-child(1)) {
+    margin-top: 20px;
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table h2{
+    color: var(--light-gray);
+    font-weight: 400;
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+    background-color: var(--light-gray);
+    border-radius: 20px;
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr td{
+    color: #222831;
+    border-bottom: 2px solid var(--teal);
+    padding: 10px;
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr td:nth-child(2){
+    word-break: break-all;
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr:nth-child(1) td{
+    border-bottom: 2px solid var(--teal);
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr:last-child td{
+    border-bottom: none;
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr td:nth-child(1){
+    border-right: 2px solid var(--teal);
+}
+
+div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr td:nth-child(odd){
+    text-align: center;
+}
+
+ul.val-ul {
+    padding-left: 20px;
+}
+
+ul.val-ul li::marker{
+    color: var(--teal);
+}
+
+ul.val-ul li:not(ul.val-ul li:nth-child(1)){
+    margin-top: 20px;
+}
+
+div.error-more-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+    background-color: rgb(211, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+
+    color: var(--light-gray);
+    text-align: center;
+}
+
+@media all and (min-width: 414px) {
+    div.wrapper-details-table main.details-table div.image-product-details-table img{
+        border-radius: 15px;
+    }
+
+    div.wrapper-details-table {
+        padding: 20px;
+    }
+
+    div.wrapper-details-table main.details-table{
+        padding: 20px;
+    }
+}
+
+@media all and (min-width: 540px) {
+    div.wrapper-details-table main.details-table div.image-product-details-table{
+        width: 45%;
+    }
+
+    div.wrapper-details-table main.details-table > h1{
+        font-size: 3rem;
+    }
+    
+    div.wrapper-details-table main.details-table div.all-details-table div.each-details-table h2{
+        font-size: 1.7rem;
+    }
+
+    div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr td{
+        padding: 15px;
+    }
+    
+}
+
+@media all and (min-width: 768px) {
+
+    div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr td:nth-child(odd){
+        text-align: center;
+        width: 40%;
+    }
+
+    div.wrapper-details-table main.details-table div.image-product-details-table img{
+        border-radius: 23px;
+    }
+
+    div.wrapper-details-table {
+        padding: 30px;
+    }
+
+    div.wrapper-details-table main.details-table{
+        padding: 30px;
+    }
+}
+
+@media all and (min-width: 820px) {
+    div.wrapper-details-table main.details-table div.image-product-details-table{
+        width: 40%;
+    }
+
+}
+
+@media all and (min-width: 900px) {
+    div.wrapper-details-table main.details-table div.image-product-details-table{
+        width: 30%;
+    }
+
+}
+
+@media all and (max-width: 250px) {
+    div.wrapper-details-table main.details-table > h1{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media all and (max-width: 200px) {
+
+    div.wrapper-details-table main.details-table > h1.loading-MoreDetails{
+        font-size: 1rem;
+    }
+
+    div.wrapper-details-table main.details-table div.all-details-table div.each-details-table table tbody tr td{
+        word-break: break-all;
+    }
+    
+}
+
+@media all and (max-width: 250px) {
+    div.error-more-details {
+        font-size: 0.7rem;
+    }
+}

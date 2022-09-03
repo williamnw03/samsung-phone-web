@@ -1,0 +1,42 @@
+:root {
+    --new-black: #222831;
+    --dark-gray: #393E46;
+    --teal: #00ADB5;
+    --light-gray: #EEEEEE;
+}
+
+footer.footer {
+    width: 100%;
+    background-color: var(--teal);
+    margin-top: 50px;
+    padding: 20px;
+
+    text-align: center;
+    color: var(--light-gray);
+
+    position: absolute;
+    top: 100%;
+}
+
+footer.footer div.source-api a{
+    word-break: break-all;
+    color: var(--new-black);
+}
+
+footer.footer p.madeby{
+    margin-top: 20px;
+}
+
+/* @media all and (min-width: 768px) {
+    footer.footer div.source-api p{
+        font-size: 1.4rem;
+    }
+
+    footer.footer div.source-api a{
+        font-size: 1.4rem;
+    }
+    
+    footer.footer p.madeby{
+        font-size: 1.4rem;
+    }
+} */

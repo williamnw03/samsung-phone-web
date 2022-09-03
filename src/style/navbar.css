@@ -1,0 +1,128 @@
+:root {
+    --new-black: #222831;
+    --dark-gray: #393E46;
+    --teal: #00ADB5;
+    --light-gray: #EEEEEE;
+
+}
+
+nav.navbar{
+    background-color: var(--new-black);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 15px;
+    height: 60px;
+}
+
+nav.navbar div.web-name{
+    color: var(--light-gray);
+    font-size: 0.7rem;
+}
+
+nav.navbar div.home{
+    color: var(--light-gray);
+    font-size: 1.4rem;
+    line-height: 0;
+    background-color: var(--teal);
+    border-radius: 10px;
+}
+
+nav.navbar div.home a{
+    padding: 8px;
+    display: block;
+    color: var(--light-gray);
+    border-radius: 10px;
+}
+
+@media all and (min-width: 360px) {
+    nav.navbar{
+        height: 80px;
+    }
+
+    nav.navbar div.web-name{
+        font-size: 1rem;
+    }
+
+    nav.navbar div.home{
+        font-size: 1.8rem;
+    }
+    
+    nav.navbar div.home a{
+        padding: 12px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    nav.navbar{
+        height: 100px;
+        padding: 0 25px;
+    }
+/* 
+    nav.navbar div.web-name{
+        font-size: 1.3rem;
+    }
+
+    nav.navbar div.home{
+        font-size: 2.4rem;
+    }
+    
+    nav.navbar div.home a{
+        padding: 15px;
+    } */
+}
+
+@media all and (min-height: 600px) {
+    nav.navbar{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+}
+
+
+
+@media all and (min-width: 1024px) {
+    /* nav.navbar{
+        height: 80px;
+    }
+
+    nav.navbar div.web-name{
+        font-size: 1.1rem;
+    }
+
+    nav.navbar div.home{
+        font-size: 1.5rem;
+    }
+    
+    nav.navbar div.home a{
+        padding: 12px;
+    } */
+}
+
+@media all and (max-width: 200px) {
+    nav.navbar{
+        padding: 0 5px;
+    }
+}
+
+@media all and (max-width: 160px) {
+    nav.navbar{
+        height: 45px;
+    }
+
+    nav.navbar div.web-name{
+        font-size: 0.6rem;
+    }
+
+    nav.navbar div.home{
+        font-size: 1.1rem;
+    }
+    
+    nav.navbar div.home a{
+        padding: 7px;
+    }
+}
+
