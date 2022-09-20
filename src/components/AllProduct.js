@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "../style/all-card.css"
 import CardProduct from "./CardProduct"
 import DetailsCard from "./DetailsCard"
+import samsung1Img from "../img/samsung1.jpg"
 
 const AllProduct = () => {
 
@@ -30,9 +31,8 @@ const AllProduct = () => {
     
     useEffect(() => {
         const abortCards = new AbortController()
-
         const fetching = async () => {
-
+            
             try {
                 const resp = await fetch("https://api-mobilespecs.azharimm.site/v2/brands/samsung-phones-9", {signal: abortCards.signal})
 
@@ -53,6 +53,18 @@ const AllProduct = () => {
                 setError(false)
 
             } catch(err) {
+                if(err.message = "Failed to fetch"){
+                    console.log("Fallback API error")
+                    const phones = Array(20).fill({
+                        name: "This is Samsung Phone",
+                        image: samsung1Img,
+                        slug: "samsung1"
+                    })
+                    setProductData((prev) => phones)
+                    setLoading(false)
+                    setError(false)
+                    return false
+                }
 
                 if(err.name !== "AbortError") {
                     setError(true)
@@ -111,6 +123,24 @@ const AllProduct = () => {
                 setErrorDC(false)
 
             } catch(err) {
+                if(err.message = "Failed to fetch"){
+                    console.log("Fallback API error 2")
+                    setErrorDC(false)
+                    setDetailsData((prev) => {
+                        return {
+                            phone_name: "Samsung Phone 1",
+                            dimension: "Sed porttitor convallis mauris, ac.",
+                            release_date: "Nulla molestie lorem a augue.",
+                            os: "Nullam at pretium diam. Nam.",
+                            storage: "Quisque maximus in eros ut.",
+                            image: samsung1Img,
+                            slug: "samsung1"
+                        }
+                        
+                    })
+                    return false
+                }
+
                 if(err.name !== "AbortError") setErrorDC(true)
                 
             }
