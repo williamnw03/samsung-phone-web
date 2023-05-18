@@ -28,7 +28,7 @@ const App = () => {
                         <MoreDetails/>
                     </Route>
 
-                    <Route>
+                    <Route path="*">
                         <NotFound/>
                     </Route>
                 </Switch>
