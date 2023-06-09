@@ -8,6 +8,8 @@ const Footer = () => {
         <footer className="footer blur">
             <div className="source-api">
                 <p>API from</p>
+                
+                <a href="https://phonewise.onrender.com/api/search?q=samsung">https://phonewise.onrender.com/api/search?q=samsung</a>
                 <a href="https://github.com/azharimm/phone-specs-api">https://github.com/azharimm/phone-specs-api</a>
             </div>
 
