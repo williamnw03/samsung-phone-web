@@ -34,19 +34,23 @@ const AllProduct = () => {
         const fetching = async () => {
             
             try {
-                const resp = await fetch("https://api-mobilespecs.azharimm.site/v2/brands/samsung-phones-9", {signal: abortCards.signal})
+                const resp = await fetch("https://phonewise.onrender.com/api/search?q=samsung", {signal: abortCards.signal})
 
                 if(!resp.ok) throw new Error("Something went wrong")
 
                 const data = await resp.json()
+
+                console.log(data)
                 
-                const phones = data.data.phones.map(e => {
+                const phones = data.map(e => {
                     return {
                         name: e.phone_name,
                         image: e.image,
                         slug: e.slug
                     }
                 })
+
+                console.log(phones)
     
                 setProductData((prev) => phones)
                 setLoading(false)
@@ -125,7 +129,7 @@ const AllProduct = () => {
             } catch(err) {
                 if(err.message = "Failed to fetch"){
                     console.log("Fallback API error 2")
-                    setErrorDC(false)
+                    setErrorDC(true)
                     setDetailsData((prev) => {
                         return {
                             phone_name: "Samsung Phone 1",
