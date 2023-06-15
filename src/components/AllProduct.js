@@ -39,8 +39,6 @@ const AllProduct = () => {
                 if(!resp.ok) throw new Error("Something went wrong")
 
                 const data = await resp.json()
-
-                console.log(data)
                 
                 const phones = data.map(e => {
                     return {
@@ -49,8 +47,6 @@ const AllProduct = () => {
                         slug: e.slug
                     }
                 })
-
-                console.log(phones)
     
                 setProductData((prev) => phones)
                 setLoading(false)

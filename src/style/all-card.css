@@ -58,13 +58,16 @@ div > p.error{
 }
 
 main.all-product div.each-product {
-    background-color: var(--dark-gray);
+    background-color: var(--light-gray);
     border-radius: 15px;
     transition: box-shadow 0.3s;
 }
 
 main.all-product div.each-product:hover {
-    box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px; */
+    transform: scale(1.08);
+    transition: transform;
+    transition-duration: 0.3s;
 }
 
 main.all-product div.each-product div.img-details div.img-details-product {
@@ -105,13 +108,19 @@ main.all-product div.each-product div.img-details div.img-details-product button
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+
+}
+
+main.all-product div.each-product div.img-details div.img-details-product button:hover {
+
+
 }
 
 main.all-product div.each-product div.name-product {
     padding: 30px 20px;
     
     text-align: center;
-    color: var(--light-gray);
+    color: var(--teal);
     word-break: break-all;
 }
 

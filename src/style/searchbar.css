@@ -37,13 +37,13 @@ div.search-bar-container input{
     outline: none;
     border: none;
     border-radius: 10px;
-    background-color: var(--dark-gray);
+    background-color: var(--light-gray);
 
-    color: var(--light-gray);
+    color: var(--dark-gray);
 }
 
 div.search-bar-container input::placeholder{
-    color: var(--light-gray);
+    color: var(--dark-gray);
     opacity: 0.9;
 }
 
