@@ -60,14 +60,12 @@ div > p.error{
 main.all-product div.each-product {
     background-color: var(--light-gray);
     border-radius: 15px;
-    transition: box-shadow 0.3s;
+    transition: transform 0.3s;
 }
 
 main.all-product div.each-product:hover {
     /* box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px; */
     transform: scale(1.08);
-    transition: transform;
-    transition-duration: 0.3s;
 }
 
 main.all-product div.each-product div.img-details div.img-details-product {
@@ -109,10 +107,13 @@ main.all-product div.each-product div.img-details div.img-details-product button
     -webkit-user-select: none;
     -ms-user-select: none;
 
+    transition: all 0.5s;
 }
 
 main.all-product div.each-product div.img-details div.img-details-product button:hover {
 
+    background-color: var(--new-black);
+    color: var(--light-gray);
 
 }
 

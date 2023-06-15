@@ -28,6 +28,13 @@ nav.navbar div.home{
     line-height: 0;
     background-color: var(--teal);
     border-radius: 10px;
+    transition: all 0.3s;
+}
+
+nav.navbar div.home:hover{
+    color: var(--teal);
+    background-color: var(--light-gray);
+    border-radius: 50%;
 }
 
 nav.navbar div.home a{
@@ -35,6 +42,12 @@ nav.navbar div.home a{
     display: block;
     color: var(--light-gray);
     border-radius: 10px;
+    transition: all 0.3s;
+}
+
+nav.navbar div.home a:hover{
+    color: var(--teal);
+    border-radius: 50%;
 }
 
 @media all and (min-width: 360px) {

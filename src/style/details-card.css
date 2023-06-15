@@ -109,6 +109,16 @@ div.card-details div.wrapper div.close-card{
     transform: translate(-100%, 100%);
 
     cursor: pointer;
+
+}
+
+div.card-details div.wrapper div.close-card svg{
+    transition: transform 0.5s;
+}
+
+
+div.card-details div.wrapper div.close-card:hover svg{
+    transform: rotate(180deg);
 }
 
 div.card-details div.wrapper div.details-text a.more-details-button{
@@ -130,6 +140,13 @@ div.card-details div.wrapper div.details-text a.more-details-button{
 
     user-select: none;
     cursor: pointer;
+
+    transition: all 0.5s;
+}
+
+div.card-details div.wrapper div.details-text a.more-details-button:hover{
+    color: var(--light-gray);
+    background-color: var(--new-black);
 }
 
 div.error-details-card {
