@@ -1,103 +1,98 @@
 :root {
-    --new-black: #222831;
-    --dark-gray: #393E46;
-    --teal: #00ADB5;
-    --light-gray: #EEEEEE;
-
+  --new-black: #222831;
+  --dark-gray: #393e46;
+  --teal: #00adb5;
+  --light-gray: #eeeeee;
 }
 
-div > p.empty{
+div > p.empty {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--light-gray);
 
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--light-gray);
-
-    width: 100%;
-    margin-top: 50px;
-    padding: 0 10px;
-
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 10px;
 }
 
 div.search-bar-container {
-    width: 100%;
-    
-    margin: 0 auto;
-    margin-top: 40px;
-    padding: 0 15px;
+  width: 100%;
+
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 15px;
 }
 
-div.search-bar-container input{
-    max-width: 400px;
-    width: 100%;
+div.search-bar-container input {
+  max-width: 400px;
+  width: 100%;
 
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 
-    padding: 7px 10px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--light-gray);
+  padding: 7px 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--light-gray);
 
-    color: var(--dark-gray);
+  color: var(--dark-gray);
 }
 
-div.search-bar-container input::placeholder{
-    color: var(--dark-gray);
-    opacity: 0.9;
+div.search-bar-container input::placeholder {
+  color: var(--dark-gray);
+  opacity: 0.9;
 }
 
 @media all and (min-width: 320px) {
-    div.search-bar-container input{
-        font-size: 1.1rem;
-        padding: 7px 15px;
-    }
+  div.search-bar-container input {
+    font-size: 1.1rem;
+    padding: 7px 15px;
+  }
 }
 
 @media all and (min-width: 360px) {
-    div.search-bar-container input{
-        font-size: 1.3rem;
-    }
+  div.search-bar-container input {
+    font-size: 1.3rem;
+  }
 }
 
 @media all and (min-width: 414px) {
-    div > p.empty{
-        font-size: 3rem;
-    }
+  div > p.empty {
+    font-size: 3rem;
+  }
 }
 
 @media all and (min-width: 540px) {
-    div.search-bar-container input{
-        margin: 0 0;
-    }
+  div.search-bar-container input {
+    margin: 0 0;
+  }
 }
 
 @media all and (min-width: 768px) {
-    div.search-bar-container {
-        padding: 0 25px;
-    }
+  div.search-bar-container {
+    padding: 0 50px;
+  }
 
-    /* div.search-bar-container input{
+  /* div.search-bar-container input{
         font-size: 1.5rem;
     } */
 }
 
 @media all and (min-width: 912px) {
-
-    /* div.search-bar-container input{
+  /* div.search-bar-container input{
         font-size: 1.7rem;
     } */
 }
 
 @media all and (min-width: 1024px) {
-
-    /* div.search-bar-container input{
+  /* div.search-bar-container input{
         font-size: 1.2rem;
     } */
 }
 
 @media all and (max-width: 230px) {
-    div > p.empty{
-        font-size: 1.5rem;
-    }
+  div > p.empty {
+    font-size: 1.5rem;
+  }
 }
