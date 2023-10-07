@@ -1,185 +1,201 @@
 :root {
-    --new-black: #222831;
-    --dark-gray: #393E46;
-    --teal: #00ADB5;
-    --light-gray: #EEEEEE;
+  --new-black: #222831;
+  --dark-gray: #393e46;
+  --teal: #00adb5;
+  --light-gray: #eeeeee;
 }
 
 main.all-product {
-    margin-top: 30px;
-    padding: 0 15px;
+  margin-top: 30px;
+  padding: 0 15px;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 300px));
-    justify-content: center;
-    gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 300px));
+  justify-content: center;
+  gap: 50px;
 
-    -webkit-user-drag: none;
-    user-select: text;
-    -moz-user-select: text;
-    -webkit-user-select: text;
-    -ms-user-select: text;
-
+  -webkit-user-drag: none;
+  user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
 }
 
 @keyframes loading-animation {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
-div > p.loading{
-    animation-name: loading-animation;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-        
-    opacity: 0;
+div > p.loading {
+  animation-name: loading-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 
-    font-size: 2.5rem;
-    text-align: center;
-    color: var(--light-gray);
+  opacity: 0;
 
-    width: 100%;
-    margin-top: 50px;
-    padding: 0 10px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--light-gray);
 
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 10px;
 }
 
-div > p.error{
+div > p.error {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--light-gray);
 
-    font-size: 2rem;
-    text-align: center;
-    color: var(--light-gray);
-
-    width: 100%;
-    margin-top: 50px;
-    padding: 0 10px;
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 10px;
 }
 
 main.all-product div.each-product {
-    background-color: var(--light-gray);
-    border-radius: 15px;
-    transition: transform 0.3s;
+  background-color: var(--light-gray);
+  border-radius: 15px;
+  transition: transform 0.3s;
 }
 
 main.all-product div.each-product:hover {
-    /* box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px; */
-    transform: scale(1.08);
+  /* box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px; */
+  transform: scale(1.08);
+  border: 4px solid var(--teal);
 }
 
 main.all-product div.each-product div.img-details div.img-details-product {
-    border-radius: 20px;
-    position: relative;
+  border-radius: 20px;
+  position: relative;
 }
 
 main.all-product div.each-product div.img-details {
-    padding: 20px;
+  padding: 20px;
 }
 
 main.all-product div.each-product div.img-details div.img-details-product img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 
-    border-radius: 22px;
+  border-radius: 22px;
 }
 
-main.all-product div.each-product div.img-details div.img-details-product button {
-    display: block;
-    
-    width: 70%;
-    padding: 10px 5px;
-    border-radius: 25px;
-    background-color: var(--teal);
-    border: none;
-    
-    color: var(--light-gray);
-    
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+main.all-product
+  div.each-product
+  div.img-details
+  div.img-details-product
+  button {
+  display: block;
 
-    cursor: pointer;
+  width: 70%;
+  padding: 10px 5px;
+  border-radius: 25px;
+  background-color: var(--teal);
+  border: none;
 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+  color: var(--light-gray);
 
-    transition: all 0.5s;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  transition: all 0.5s;
 }
 
-main.all-product div.each-product div.img-details div.img-details-product button:hover {
-
-    background-color: var(--new-black);
-    color: var(--light-gray);
-
+main.all-product
+  div.each-product
+  div.img-details
+  div.img-details-product
+  button:hover {
+  background-color: var(--new-black);
+  color: var(--light-gray);
 }
 
 main.all-product div.each-product div.name-product {
-    padding: 30px 20px;
-    
-    text-align: center;
-    color: var(--teal);
-    word-break: break-all;
+  padding: 30px 20px;
+
+  text-align: center;
+  color: var(--teal);
+  word-break: break-all;
 }
 
 @media all and (min-width: 320px) {
-    main.all-product div.each-product div.img-details div.img-details-product button {
-        font-size: 1.1rem;
-        padding: 15px 5px;
-    }
+  main.all-product
+    div.each-product
+    div.img-details
+    div.img-details-product
+    button {
+    font-size: 1.1rem;
+    padding: 15px 5px;
+  }
 
-    main.all-product div.each-product div.name-product {
-        font-size: 1.1rem;
-    }
+  main.all-product div.each-product div.name-product {
+    font-size: 1.1rem;
+  }
 }
 
 @media all and (min-width: 414px) {
-    main.all-product div.each-product div.img-details div.img-details-product button {
-        font-size: 1.3rem;
-    }
+  main.all-product
+    div.each-product
+    div.img-details
+    div.img-details-product
+    button {
+    font-size: 1.3rem;
+  }
 
-    main.all-product div.each-product div.name-product {
-        font-size: 1.3rem;
-    }
+  main.all-product div.each-product div.name-product {
+    font-size: 1.3rem;
+  }
 
-    div > p.loading{
-        font-size: 3rem;
-    }
+  div > p.loading {
+    font-size: 3rem;
+  }
 
-    div > p.error{
-        font-size: 3rem;
-    }
+  div > p.error {
+    font-size: 3rem;
+  }
 }
 
 @media all and (max-width: 290px) {
-    main.all-product div.each-product div.img-details div.img-details-product img {
-        border-radius: 15px;
-    }
+  main.all-product
+    div.each-product
+    div.img-details
+    div.img-details-product
+    img {
+    border-radius: 15px;
+  }
 }
 
 @media all and (max-width: 230px) {
-    main.all-product div.each-product div.img-details div.img-details-product img {
-        border-radius: 10px;
-    }
+  main.all-product
+    div.each-product
+    div.img-details
+    div.img-details-product
+    img {
+    border-radius: 10px;
+  }
 
-    div > p.loading{
-        font-size: 1.5rem;
-    }
+  div > p.loading {
+    font-size: 1.5rem;
+  }
 
-    div > p.error{
-
-        font-size: 1.2rem;    
-    
-    }
-    
+  div > p.error {
+    font-size: 1.2rem;
+  }
 }
 
 @media all and (max-width: 200px) {
-    main.all-product {
-        padding: 0;
-    
-    }
+  main.all-product {
+    padding: 0;
+  }
 }
