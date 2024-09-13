@@ -55,15 +55,15 @@ div > p.error {
 }
 
 main.all-product div.each-product {
-  background-color: var(--light-gray);
+  background-color: var(--dark-gray);
   border-radius: 15px;
-  transition: transform 0.3s;
+  border: 2px solid var(--teal);
+  transition: all 0.3s;
 }
 
 main.all-product div.each-product:hover {
-  /* box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px; */
+  box-shadow: rgba(0, 0, 0, 0.6) 0 0 20px;
   transform: scale(1.08);
-  border: 4px solid var(--teal);
 }
 
 main.all-product div.each-product div.img-details div.img-details-product {
@@ -125,7 +125,7 @@ main.all-product div.each-product div.name-product {
   padding: 30px 20px;
 
   text-align: center;
-  color: var(--teal);
+  color: var(--light-gray);
   word-break: break-all;
 }
 
